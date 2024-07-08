@@ -14,7 +14,7 @@ import java.util.Optional;
 
 @RepositoryRestController
 public interface BillRepository extends JpaRepository<Bill,Long> {
-    @RestResource(path = "/buCustomerId")
+    @RestResource(path = "/byCustomerId")
     List<Bill> findByCustomerId(@Param("customerId") Long customerId);
 
 

@@ -1,7 +1,7 @@
-package org.sid.inventaireservice;
+package org.sid.inventoryservice;
 
-import org.sid.inventaireservice.entities.Product;
-import org.sid.inventaireservice.repository.ProductRepository;
+import org.sid.inventoryservice.entities.Product;
+import org.sid.inventoryservice.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,10 +11,10 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import java.util.List;
 
 @SpringBootApplication
-public class InventaireServiceApplication {
+public class InventoryServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(InventaireServiceApplication.class, args);
+        SpringApplication.run(InventoryServiceApplication.class, args);
     }
 
     @Bean

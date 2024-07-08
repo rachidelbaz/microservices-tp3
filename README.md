@@ -23,7 +23,7 @@
 
   <h2>Intégration des services</h2>
   <ol>
-    <li><strong>OpenFeign :</strong> OpenFeign est utilisé pour faciliter l'intégration entre les micro-services. Le service de facturation communique avec les services client et inventaire pour récupérer les informations nécessaires à la facturation.</li>
+    <li><strong>OpenFeign :</strong> OpenFeign est utilisé pour faciliter l'intégration entre les micro-services. Le service de facturation communique avec les services client et inventory pour récupérer les informations nécessaires à la facturation.</li>
   </ol>
 
   <h2>Interface utilisateur</h2>

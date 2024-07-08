@@ -1,4 +1,4 @@
-package org.sid.inventaireservice.entities;
+package org.sid.inventoryservice.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
