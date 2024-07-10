@@ -29,3 +29,5 @@
   <h2>Interface utilisateur</h2>
   <p>Un client Web Angular est développé pour permettre aux utilisateurs d'interagir avec le système. Il offre des fonctionnalités pour la gestion des clients, des produits et des factures.</p>
   <img src="./captures/Screenshot 2024-07-09 193120.png">
+  <img src="./captures/orders.png">
+  <img src="./captures/order-details.png">

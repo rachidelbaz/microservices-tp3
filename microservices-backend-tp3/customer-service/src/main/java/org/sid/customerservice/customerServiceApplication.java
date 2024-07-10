@@ -1,7 +1,7 @@
 package org.sid.customerservice;
 
 import org.sid.customerservice.entities.Customer;
-import org.sid.customerservice.repository.CustomerReposiroty;
+import org.sid.customerservice.repository.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,17 +11,18 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import java.util.List;
 
 @SpringBootApplication
-public class customerServiceApplication {
+
+public class CustomerServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(customerServiceApplication.class, args);
+        SpringApplication.run(CustomerServiceApplication.class, args);
     }
 
     @Bean
-    public CommandLineRunner commandLineRunner(CustomerReposiroty customerReposiroty, RepositoryRestConfiguration repositoryRestConfiguration){
+    public CommandLineRunner commandLineRunner(CustomerRepository CustomerRepository, RepositoryRestConfiguration repositoryRestConfiguration){
         return args -> {
             repositoryRestConfiguration.exposeIdsFor(Customer.class);
-            customerReposiroty.saveAll(
+            CustomerRepository.saveAll(
                     List.of(
                             Customer.builder().name("Hassan").email("hassan@gmail.com").build(),
                             Customer.builder().name("Hanane").email("hanane@gmail.com").build(),
@@ -29,7 +30,7 @@ public class customerServiceApplication {
 
                     )
             );
-            customerReposiroty.findAll().forEach(c->{
+            CustomerRepository.findAll().forEach(c->{
                 System.out.println(c);
                     }
 

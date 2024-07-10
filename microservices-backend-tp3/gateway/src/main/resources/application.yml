@@ -1,18 +1,38 @@
+#server:
+#  port: 8888
+#
+#spring:
+#  cloud:
+#    gateway:
+#      globalcors:
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "http://localhost:4200"
+#            allowedMethods:
+#              - GET
+#              - POST
+#              - PUT
+#              - DELETE
+#              - OPTIONS
+#            allowedHeaders:
+#              - "*"
+#            allowCredentials: true
 server:
   port: 8888
 spring:
+  application:
+    name: gateway-service
   cloud:
+    discovery:
+      enabled: true
     gateway:
       globalcors:
         corsConfigurations:
           '[/**]':
             allowedOrigins: "http://localhost:4200"
-            allowedMethods:
+            allowedHeaders: "*"
+            allowedMethods :
               - GET
               - POST
               - PUT
               - DELETE
-              - OPTIONS
-            allowedHeaders:
-              - "*"
-            allowCredentials: true

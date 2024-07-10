@@ -16,7 +16,7 @@ export class CustomersComponent implements OnInit{
   constructor(private http:HttpClient,private route:Router) {
   }
   ngOnInit(): void {
-    this.http.get("http://localhost:8888/COSTUMER-SERVICE/customers?projection=fullCustomer").subscribe({
+    this.http.get("http://localhost:8888/CUSTOMER-SERVICE/customers?projection=fullCustomer").subscribe({
 
       next : (data)=>{
         this.customers = data;
